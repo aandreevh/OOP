@@ -20,11 +20,11 @@ using namespace std;
 
 	Направете следните функции в клас Account:
 		
-		- withdraw(unsigned long long) - теглене на положителна сума без ограничение
-		- safeWithdraw(unsigned long long) - теглене на положителна сума само ако съотвеният Account има толкова налични
-		- transfer(Account&,unsigned long long) - трансфериране на положителна сума от текущия акаунт в друг
+		- withdraw(long long) - теглене на положителна сума без ограничение
+		- safeWithdraw(long long) - теглене на положителна сума само ако съотвеният Account има толкова налични
+		- transfer(Account&,long long) - трансфериране на положителна сума от текущия акаунт в друг
 		- safeTransfer - същото като transfer, но гледаме дали акаунтът има достатъчно пари
-		- deposit(unsinged long long) - депозиране на положителна сума пари
+		- deposit(long long) - депозиране на положителна сума пари
 		- inDebt() - дали съответният Account е в заем (има отрицателен баланс)
 
 	Направете клас Address:
