@@ -1,0 +1,29 @@
+Допълнителната работа ще бъде върху: https://github.com/aandreevh/OOP/blob/master/exercise2/src/MainFinal.cpp
+
+1. Разделете класовете от MainFinal.cpp на няколко файла.
+Създайте .h файл за всеки един от класовете, като там
+само декларирайте тяхната функционалност. Създайте .cpp
+файл за всеки един хедър файл, където вече дефинирайте
+тяхната функционалност. Премахнете вече излищният код от
+Main.cpp, като го замените с (#include "...").
+
+1. Добавете допълнителен copy constructor на класове: 
+    - Address
+    - PersonalInformation
+    - Account
+    
+2. Промяна на getters:
+    - PersonalInformation:
+        const Address& getAddress() const -> Address getAddress() const
+    - Account:
+        const PersonalInformation& getPersonalInformation() const -> PersonalInformation getPersonalInformation() const
+       
+3. Добавяне на non-constant getters. Създайте следните функции:
+    
+    - PersonalInformation:
+        Address& getAddress();
+        
+    - Account:
+         PersonalInformation& getPersonalInformation()
+        
+        
