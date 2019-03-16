@@ -1,7 +1,12 @@
 #include "AccountArray.h"
 
 
-	bool AccountArray::resizeCapacity(unsigned int capacity) {
+unsigned int AccountArray::getCapacity() const
+{
+	return this->capacity;
+}
+
+bool AccountArray::resizeCapacity(unsigned int capacity) {
 		if (getCapacity() >= capacity) {
 			return false;
 		}
@@ -63,6 +68,17 @@
 
 		accounts[getSize() - 1] = new Account(account.getPersonalInformation(), account.getBalance());
 	}
+
+	void AccountArray::setAccount(const Account& account, unsigned int index)
+	{
+		if (index == getSize()) addAccount(account);
+		else if(index< getSize()) {
+			delete accounts[index];
+
+			accounts[index] = new Account(account);
+		}
+	}
+	
 
 	bool AccountArray::removeAccount(unsigned int index) {
 		if (index >= getSize()) return false;
