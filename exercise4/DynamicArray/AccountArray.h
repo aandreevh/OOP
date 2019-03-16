@@ -7,9 +7,7 @@ class AccountArray {
 
 	Account** accounts = nullptr;
 
-	unsigned int getCapacity() const {
-		return capacity;
-	}
+	unsigned int getCapacity() const;
 
 	bool resizeCapacity(unsigned int capacity);
 	void incrementCapacity();
@@ -27,7 +25,7 @@ public:
 	~AccountArray();
 
 	void addAccount(const Account& account);
-
+	void setAccount(const Account& account, unsigned int index);
 	bool removeAccount(unsigned int index);
 
 	const Account& getAccount(unsigned int index) const;
