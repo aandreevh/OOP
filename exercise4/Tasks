@@ -1,35 +1,37 @@
 Създайте клас:
 
     - IntegerArray(.h, .cpp):
-    class IntegerArray {
+    
+    
+	    class IntegerArray {
 
-	unsigned int size = 0, capacity = 0;
+		unsigned int size = 0, capacity = 0;
 
-    //Забележка: int*, а не int**
-	int* array;
+		//Забележка: int*, а не int**
+		int* array;
 
-	unsigned int getCapacity() const;
+		unsigned int getCapacity() const;
 
-	bool resizeCapacity(unsigned int capacity);
-	void incrementCapacity();
+		bool resizeCapacity(unsigned int capacity);
+		void incrementCapacity();
 
-	void incrementSize();
-	void decrementSize();
+		void incrementSize();
+		void decrementSize();
 
 
-public:
+	public:
 
-	IntegerArray();
-	IntegerArray(const IntegerArray& other);
-	~IntegerArray();
+		IntegerArray();
+		IntegerArray(const IntegerArray& other);
+		~IntegerArray();
 
-	void addInteger(int);
+		void addInteger(int);
 
-	bool removeInteger(unsigned int index);
+		bool removeInteger(unsigned int index);
+		void setInteger(int, unsigned int index);
 
-	int getInteger(unsigned int index) const;
+		int getInteger(unsigned int index) const;
 
-	unsigned int getSize() const;
-
-	bool isEmpty() const;
-};
+		unsigned int getSize() const;
+		bool isEmpty() const;
+	};
