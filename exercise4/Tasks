@@ -8,9 +8,7 @@
     //Забележка: int*, а не int**
 	int* array;
 
-	unsigned int getCapacity() const {
-		return capacity;
-	}
+	unsigned int getCapacity() const;
 
 	bool resizeCapacity(unsigned int capacity);
 	void incrementCapacity();
