@@ -1,18 +1,6 @@
-Допълнителната работа ще бъде върху: 
-    - (1) https://github.com/aandreevh/OOP/tree/master/exercise3/final/src
-    - (2) https://github.com/aandreevh/OOP/tree/master/exercise4/DynamicArray
-    
-1. Свържете код (2) с код (1) в един общ проект.
+Създайте клас:
 
-2. Променете AccountArray, така че неговото (capacity) да расте двойно след като стане веднъж 1.
-т.е.: capacity= 0, 1, 2, 4, 8, ...
-
-2. Добавяне на неща в кода:
-    - Добавете поле (id) в клас Account и го променете, така че да работи с промяната
-   
-3. Нови класове:
-
-    - IntegerArray:
+    - IntegerArray(.h, .cpp):
     class IntegerArray {
 
 	unsigned int size = 0, capacity = 0;
