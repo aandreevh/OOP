@@ -20,6 +20,9 @@ class AccountArray {
 
 public:
 
+	AccountArray();
+	AccountArray(const AccountArray& other);
+
 
 	~AccountArray();
 
