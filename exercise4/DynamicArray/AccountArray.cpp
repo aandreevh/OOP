@@ -36,15 +36,19 @@
 	}
 
 	void AccountArray::incrementCapacity() {
-		if (getCapacity() == 0) {
-			resizeCapacity(1);
-		}
-		else {
-			resizeCapacity(2 * getCapacity());
-		}
+		resizeCapacity(getCapacity() + 1);
 	}
 
 
+
+	AccountArray::AccountArray(){}
+
+	AccountArray::AccountArray(const AccountArray & other)
+	{
+		for (unsigned int i = 0; i < other.getSize(); i++) {
+			addAccount(other.getAccount(i));
+		}
+	}
 
 	AccountArray::~AccountArray() {
 
