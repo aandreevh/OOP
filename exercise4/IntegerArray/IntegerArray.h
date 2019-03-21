@@ -1,0 +1,33 @@
+#pragma once
+
+class IntegerArray {
+
+	unsigned int size = 0, capacity = 0;
+
+	int* array;
+
+	unsigned int getCapacity() const;
+
+	bool resizeCapacity(unsigned int capacity);
+	void incrementCapacity();
+
+	void incrementSize();
+	void decrementSize();
+
+
+public:
+
+	IntegerArray();
+	IntegerArray(const IntegerArray& other);
+	~IntegerArray();
+
+	void addInteger(int);
+
+	bool removeInteger(unsigned int index);
+	void setInteger(int, unsigned int index);
+
+	int getInteger(unsigned int index) const;
+
+	unsigned int getSize() const;
+	bool isEmpty() const;
+};
