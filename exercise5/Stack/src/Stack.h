@@ -1,7 +1,3 @@
-//
-// Created by hykar on 24.03.19.
-//
-
 #ifndef STACKPROJECT_STACK_H
 #define STACKPROJECT_STACK_H
 
